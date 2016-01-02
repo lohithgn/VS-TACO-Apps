@@ -1,0 +1,9 @@
+{
+    "name": "FoodLabelEssentials",
+    "version": "1.0.0",
+    "dependencies": {
+	    "bower": "1.5.3",
+	    "gulp": "3.9.0",
+	    "gulp-bower": "0.0.10"
+	}
+}

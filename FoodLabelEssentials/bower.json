@@ -1,0 +1,6 @@
+{
+    "name": "FoodLabelEssentials",
+    "dependencies": {
+    	"kendo-ui-appbuilder-core" : "2015.3.930+Official"
+    }
+}

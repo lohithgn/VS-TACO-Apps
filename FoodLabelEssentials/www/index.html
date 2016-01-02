@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; media-src *">
+    <title>BlankCordovaKendoUIApp1</title>
+    <link href="lib/kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+
+    <!-- BlankCordovaKendoUIApp1 references -->
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div data-role="layout" data-id="main" id="main">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="lib/kendo/js/jquery.min.js"></script>
+    <script src="lib/kendo/js/kendo.mobile.min.js"></script>
+
+    <script src="scripts/settings.js"></script>
+    <script src="scripts/foodEssentialsService.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="views/home/home.js"></script>
+    <script src="views/search/search.js"></script>
+    <script src="views/ingredients/ingredients.js"></script>
+</body>
+</html>
