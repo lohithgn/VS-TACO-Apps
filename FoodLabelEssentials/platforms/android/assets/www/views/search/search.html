@@ -1,0 +1,25 @@
+﻿<div data-role="view" data-layout="main" data-title="Food Label Search"
+     data-model="APP.SearchViewModel" data-show="APP.SearchViewModel.show">
+    <div data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-align="left"></a>
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    <ul data-role="listview" data-bind="source: searchResults"
+        data-auto-bind="false"
+        data-template="searchResultsItemTemplate"></ul>
+</div>
+
+<script id="searchResultsItemTemplate" type="text/x-kendo-template">
+    <a class="km-listview-link" href="${APP.Settings.views.ingredients}?upc=${upc}">
+        ${product_name}
+        <p><small>${brand} ${product_size}</small></p>
+    </a>
+</script>
+
+<style>
+    .km-nova .km-list > li {
+        padding: 0.5em .84em 0.5em .84em;
+    }
+</style>
