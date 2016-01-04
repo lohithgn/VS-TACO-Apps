@@ -45,6 +45,7 @@
                         resolve();
                     },
                     error: function (err) {
+                        console.log(err)
                         reject(err)
                     }
                 })

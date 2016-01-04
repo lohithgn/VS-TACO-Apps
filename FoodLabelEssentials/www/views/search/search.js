@@ -14,7 +14,9 @@
                 this.model.get("searchResults").read().then(function ()
                 {
                     app.kMobile.hideLoading()
-                });
+                }, function () {
+                    app.kMobile.hideLoading()
+                })
             }
             else {
                 this.model.get("searchResults").fetch().then(function () {
